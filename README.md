@@ -15,7 +15,9 @@ configurables:
   
 add Fonts to Download list:
   ->addFont(string $fontFamily,string $fontStyle, array $fontWeights);
+  
   or
+  
   ->addFontByUrl(string $urlOfFont); (d.g. "https://fonts.google.com/?selection.family=Gelasio:500i,700|Open+Sans|Roboto")
   
 run:
