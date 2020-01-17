@@ -14,6 +14,7 @@ $dl->setConfig();
 $dl->addFont('Roboto', 'italic', ['400', 500]);
 $dl->addFont('Roboto', 'normal', ['400', 500, 700]);
 //$dl->addFontByUrl('https://fonts.google.com/?selection.family=Open+Sans:400,400i,600,600i,700i');
+//$dl->addFontByUrl("https://fonts.googleapis.com/css?family=Gelasio:500i,700|Open+Sans|Roboto&display=swap");
 
 try {
     $result = $dl->download(function($cb) {
