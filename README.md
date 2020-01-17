@@ -20,7 +20,7 @@ add Fonts to Download list:
   
   or
   
-  ->addFontByUrl(string $urlOfFont); (d.g. "https://fonts.google.com/?selection.family=Gelasio:500i,700|Open+Sans|Roboto")
+  ->addFontByUrl(string $urlOfFont); (e.g. "https://fonts.google.com/?selection.family=Gelasio:500i,700|Open+Sans|Roboto" or "https://fonts.googleapis.com/css?family=Gelasio:500i,700|Open+Sans|Roboto&display=swap")
   
 run:
 
