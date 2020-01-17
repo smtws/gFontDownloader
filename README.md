@@ -9,11 +9,13 @@ Configuration via 3 options
 combinations are possible
 
 configurables:
+
   output: directory where fonts are downloaded to (each font family will have its own subdirectory) defaults to ./
   formats: optional array of font formats to be downloaded, defaults to all valid values. valid: eot,woff,woff2,svg,ttf
   onRecoverableError: how to handle recoverable errors. valid: stop(default), recover
   
 add Fonts to Download list:
+
   ->addFont(string $fontFamily,string $fontStyle, array $fontWeights);
   
   or
@@ -21,6 +23,7 @@ add Fonts to Download list:
   ->addFontByUrl(string $urlOfFont); (d.g. "https://fonts.google.com/?selection.family=Gelasio:500i,700|Open+Sans|Roboto")
   
 run:
+
   ->download();
   returns array of all downloaded fonts
   accepts callback function which is passed information on each font individually
