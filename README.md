@@ -1,4 +1,7 @@
-# gFontDownloader
+# gFontDownloader 
+[![Latest Stable Version](https://img.shields.io/packagist/v/smtws/google-font-downloader.svg)](https://packagist.org/packages/smtws/google-font-downloader)
+[![Total Downloads](https://img.shields.io/packagist/dt/smtws/google-font-downloader.svg)](https://packagist.org/packages/smtws/google-font-downloader)
+
 php google fonts downloader with local css creation
 
 ### Configuration via 3 options
