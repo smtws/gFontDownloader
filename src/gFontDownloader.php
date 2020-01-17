@@ -69,13 +69,13 @@ class gFontDownloader {
         $params = array();
         $query = parse_url($url, PHP_URL_QUERY);
         parse_str($query, $params);
-        $fonts = explode('|', $params['selection_family']);
+        $fonts = explode('|', $params['family']?$params['family']:$params['selection_family']);
         foreach ($fonts as $font) {
             $fontName = current(explode(':', $font));
             $list = explode(',', end(explode(':', $font)));
 
             foreach ($list as $item) {
-                $this->addFont($fontName, (stripos($item, 'i') !== false ? 'italic' : 'normal'), [(int) $item], $formats, $subsets);
+                $this->addFont($fontName, (stripos($item, 'i') !== false ? 'italic' : 'normal'), [$item>0?(int)$item:400], $formats, $subsets);
             }
         }
     }
