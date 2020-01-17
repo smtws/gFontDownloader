@@ -1,0 +1,5 @@
+{
+    "output": "./",
+    "formats": ["eot", "woff", "woff2", "svg", "ttf"],
+    "onRecoverableError": "stop"
+}
