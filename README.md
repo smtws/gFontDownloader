@@ -10,19 +10,19 @@ combinations are possible
 
 ### configurables:
 
-  output: directory where fonts are downloaded to (each font family will have its own subdirectory) defaults to ./
-  
-  formats: optional array of font formats to be downloaded, defaults to all valid values. valid: eot,woff,woff2,svg,ttf
-  
-  onRecoverableError: how to handle recoverable errors. valid: stop(default), recover
+  - output: directory where fonts are downloaded to (each font family will have its own subdirectory) defaults to ./
+  - formats: optional array of font formats to be downloaded, defaults to all valid values. valid: eot,woff,woff2,svg,ttf
+  - onRecoverableError: how to handle recoverable errors. valid: stop(default), recover
   
 ### add Fonts to Download list:
 
-  ->addFont(string $fontFamily,string $fontStyle, array $fontWeights);
+  - ->addFont(string $fontFamily,string $fontStyle, array $fontWeights);
   
   or
   
-  ->addFontByUrl(string $urlOfFont); (e.g. "https://fonts.google.com/?selection.family=Gelasio:500i,700|Open+Sans|Roboto" or "https://fonts.googleapis.com/css?family=Gelasio:500i,700|Open+Sans|Roboto&display=swap")
+  - ->addFontByUrl(string $urlOfFont); 
+  
+  (e.g. "https://fonts.google.com/?selection.family=Gelasio:500i,700|Open+Sans|Roboto" or "https://fonts.googleapis.com/css?family=Gelasio:500i,700|Open+Sans|Roboto&display=swap")
   
 ### run:
 
@@ -34,8 +34,10 @@ combinations are possible
     
 ### more:
 
-  PSR3 compatible loggers can be used
+  - PSR3 compatible loggers can be used
   
   ->setLogger(new \PSRCompatibleLogger());
   
-  run ->createFamilyCssFiles() on unrecoverable errors to create Font Family CSS files that were successfully downloaded before the error occured (see example.php)
+  - run ->createFamilyCssFiles() 
+  
+  on unrecoverable errors to create Font Family CSS files that were successfully downloaded before the error occured (see example.php)
