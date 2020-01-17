@@ -1,0 +1,24 @@
+{
+    "name": "smtws/google-font-downloader",
+    "type": "library",
+    "description": "php google fonts downloader with local css creation",
+    "authors": [
+        {
+            "name": "Tordt Schmidt",
+            "email": "info@smt-webservices.de"
+        }
+    ],
+    "license": "MIT",
+    "suggest": {
+        "monolog/monolog": "Allows more advanced logging of the application flow"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "psr/log": "^1.0"
+    }
+}
