@@ -6,6 +6,7 @@ php google fonts downloader with local css creation
   1. set Configuration in config.json and just call ->setConfig();
   2. set configuration via ->setConfig([array of configuration key value pairs]);
   3. set configuration via ->setConfig($key,$value);
+
 combinations are possible
 
 ### configurables:
