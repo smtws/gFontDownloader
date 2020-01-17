@@ -10,7 +10,7 @@ $host = $_SERVER['SERVER_NAME'] ? $_SERVER['SERVER_NAME'] : $_SERVER['SERVER_ADD
 $dl = new \smtws\Tools\Fonts\Google\gFontDownloader();
 //$dl->setConfig(['output'=>'./','formats'=>['woff','woff2','svg']]);
 $dl->setConfig();
-//$dl->setLogger(new stdClass());
+//$dl->setLogger(new \PSRLogger());
 $dl->addFont('Roboto', 'italic', ['400', 500]);
 $dl->addFont('Roboto', 'normal', ['400', 500, 700]);
 //$dl->addFontByUrl('https://fonts.google.com/?selection.family=Open+Sans:400,400i,600,600i,700i');
