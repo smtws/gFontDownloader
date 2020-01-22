@@ -8,8 +8,9 @@ require('src/gFontDownloader.php');
 $host = $_SERVER['SERVER_NAME'] ? $_SERVER['SERVER_NAME'] : $_SERVER['SERVER_ADDR'];
 
 $dl = new \smtws\Tools\Fonts\Google\gFontDownloader();
-//$dl->setConfig(['output'=>'./','formats'=>['woff','woff2','svg']]);
+
 $dl->setConfig();
+//$dl->setConfig(['output'=>getcwd(),'formats'=>['woff','woff2','svg']]);
 //$dl->setLogger(new \PSRLogger());
 $dl->addFont('Roboto', 'italic', ['400', 500]);
 $dl->addFont('Roboto', 'normal', ['400', 500, 700]);
